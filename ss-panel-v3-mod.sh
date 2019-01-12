@@ -55,7 +55,7 @@ install_centos_ssr(){
 	easy_install supervisor
 	#clone shadowsocks
 	cd /root
-	git clone -b manyuser https://github.com/tianqingk4/shadowsocks.git "/root/shadowsocks"
+	git clone -b manyuser https://github.com/mengskysama/shadowsocks.git "/root/shadowsocks"
 	#install devel
 	cd /root/shadowsocks
 	yum -y install lsof lrzsz
@@ -82,7 +82,7 @@ install_ubuntu_ssr(){
 	apt-get install python-pip git -y
 	pip install cymysql
 	cd /root
-	git clone -b manyuser https://github.com/tianqingk4/shadowsocks.git "/root/shadowsocks"
+	git clone -b manyuser https://github.com/mengskysama/shadowsocks.git "/root/shadowsocks"
 	cd shadowsocks
 	pip install -r requirements.txt
 	chmod +x *.sh
@@ -173,7 +173,7 @@ install_panel_and_node(){
 	# 取消文件数量限制
 	sed -i '$a * hard nofile 512000\n* soft nofile 512000' /etc/security/limits.conf
 	install_centos_ssr
-	wget -N -P  /root/shadowsocks/ https://raw.githubusercontent.com/mmmwhy/ss-panel-and-ss-py-mu/master/userapiconfig.py
+	wget -N -P  /root/shadowsocks/ https://raw.githubusercontent.com/tianqingk4/shadowsocks/master/userapiconfig.py
 	# 启用supervisord
 	echo_supervisord_conf > /etc/supervisord.conf
   sed -i '$a [program:ssr]\ncommand = python /root/shadowsocks/server.py\nuser = root\nautostart = true\nautorestart = true' /etc/supervisord.conf
