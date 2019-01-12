@@ -1,25 +1,24 @@
-停止维护，仅供存档
+示例站点：https://v2no.us （支持流量计费、按时间计费、支付宝付款）
 
-
-ss-panel-v3魔改版91改版dumplin再改版！
-
-
-
-### ss-panel mod魔改版一键脚本
-##### 要求centos 7 x64
+马上过期了，凑活看看吧，除去lnmp的安装时间，仅需3分钟即可完成。
+# [ss-panel 一键脚本](https://91vps.us/2017/05/26/ss-panel/)
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/mmmwhy/ss-panel-and-ss-py-mu/master/ss-panel_node.sh && chmod +x ss-panel_node.sh && bash ss-panel_node.sh
+```
+# [ss-panel v3 mod魔改版一键脚本](https://91vps.us/2017/05/27/ss-panel-v3-mod/)
 
 ```
-yum install screen wget -y &&screen -S ss 
-wget -N --no-check-certificate https://raw.githubusercontent.com/dumplin233/ss-panel-v3-mod_91_dumplin/master/ss-panel-v3-mod.sh && chmod +x ss-panel-v3-mod.sh && bash ss-panel-v3-mod.sh
-
+wget -N --no-check-certificate https://raw.githubusercontent.com/mmmwhy/ss-panel-and-ss-py-mu/master/ss-panel-v3-mod.sh && chmod +x ss-panel-v3-mod.sh && bash ss-panel-v3-mod.sh
 ```
-如果导入原有数据库，需要下载IP解析库
-在网站根目录执行以下命令
-```
-php xcat initQQWry
+选项都差不多,直接输入2安装即可
 
-```
+![](http://cdn.mmmxcc.cn/blog/20170509/214909086.png)
+![](http://cdn.mmmxcc.cn/blog/20170510/101919599.png)
+![](https://ooo.0o0.ooo/2017/05/27/592934ed4e208.jpg)
 
-在原版魔改的基础，增加了一些实用的功能的基础上，
- - 支付接口改为金沙江支付宝通用接口
- - 支持商品的在线支付
+
+默认账号：ss@91vps.club
+
+默认密码：91vps
+
+详情请[点击查看](https://91vps.us/category/shadowsocks/ss-build/)，还有一个shadowsocks-manager一键安装脚本，自己看吧。
